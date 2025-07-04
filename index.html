@@ -78,3 +78,9 @@
   </section>
 </body>
 </html>
+"""
+
+# Guardar el archivo como index.html
+file_path = Path("/mnt/data/index.html")
+file_path.write_text(index_html_content, encoding="utf-8")
+file_path.name
