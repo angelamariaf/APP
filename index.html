@@ -28,44 +28,39 @@
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 1rem;
       padding: 1rem;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.12);
-      padding: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.2rem;
       border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.18);
     }
 
     .card img {
-      width: 40px;
-      height: 40px;
+      width: 64px;
+      height: 64px;
+      margin-bottom: 0.5rem;
     }
 
-    .card iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      margin-top: 1rem;
-    }
-
-    a {
+    .card a {
+      display: block;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
     }
 
-    a:hover {
+    .card a:hover {
       color: #ffcc00;
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -76,39 +71,34 @@
 
   <section class="grid-container">
     <div class="card">
-      <img src="icon-permiso.png" alt="Permiso">
-      <div>
-        <div><strong>Permiso de Inasistencia</strong></div>
-        <iframe src="https://docs.google.com/spreadsheets/d/1C5rhD_82l.../preview"></iframe>
-      </div>
+      <a href="https://docs.google.com/spreadsheets/d/1C5rhD_82l.../preview" target="_blank">
+        <img src="icon-permiso.png" alt="Permiso">
+        Permiso de Inasistencia
+      </a>
     </div>
     <div class="card">
-      <img src="icon-documentos.png" alt="Reglamento">
-      <div>
-        <div><strong>Reglamentos</strong></div>
-        <iframe src="https://www.unicesmag.edu.co/wp-content/uploads/2023/11/Reglamento-Estudiantil-2023.pdf"></iframe>
-      </div>
+      <a href="https://www.unicesmag.edu.co/wp-content/uploads/2023/11/Reglamento-Estudiantil-2023.pdf" target="_blank">
+        <img src="icon-documentos.png" alt="Reglamento">
+        Reglamentos
+      </a>
     </div>
     <div class="card">
-      <img src="icon-horario.png" alt="Horarios">
-      <div>
-        <div><strong>Horarios Académicos</strong></div>
-        <iframe src="https://linktr.ee/cesmaghorarios"></iframe>
-      </div>
+      <a href="https://linktr.ee/cesmaghorarios" target="_blank">
+        <img src="icon-horario.png" alt="Horarios">
+        Horarios Académicos
+      </a>
     </div>
     <div class="card">
-      <img src="icon-inscripciones.png" alt="Inscripciones">
-      <div>
-        <div><strong>Inscripciones y Matrículas</strong></div>
-        <iframe src="https://www.unicesmag.edu.co/inscripciones/"></iframe>
-      </div>
+      <a href="https://www.unicesmag.edu.co/inscripciones/" target="_blank">
+        <img src="icon-inscripciones.png" alt="Inscripciones">
+        Inscripciones y Matrículas
+      </a>
     </div>
     <div class="card">
-      <img src="icon-saberpro.png" alt="Saber Pro">
-      <div>
-        <div><strong>Pruebas Saber Pro</strong></div>
-        <iframe src="https://www.icfes.gov.co/web/guest/examen-saber-pro"></iframe>
-      </div>
+      <a href="https://www.icfes.gov.co/web/guest/examen-saber-pro" target="_blank">
+        <img src="icon-saberpro.png" alt="Saber Pro">
+        Pruebas Saber Pro
+      </a>
     </div>
   </section>
 </body>
