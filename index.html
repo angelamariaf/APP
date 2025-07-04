@@ -5,159 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Derecho en Línea UNICESMAG</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.png">
   <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('fondo-unicesmag.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(22, 46, 81, 0.9);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .card img {
+      width: 40px;
+      height: 40px;
+    }
+
     a {
-  color: #080808; /* o el color que prefieras */
-  text-decoration: none;
-}
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-a:visited {
-  color: #080808; /* mismo color para enlaces ya visitados */
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #080808; /* cambia al pasar el mouse, si quieres */
-}
-
-    body { background-color: #0f1f3f;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;   }
-    header { background-color: #162e51;
-  color: white;
-  padding: 1rem;
-  text-align: center; }
-    nav { display: flex;
-  justify-content: space-around;
-  background-color: #1d3557;
-  padding: 0.5rem;  }
-    nav a { color: white;
-  text-decoration: none;
-  padding: 0.5rem; }
-    nav a:hover { color: #ffcc00; }
-    main { padding: 1rem; background-image: url('fondo.png');
-  background-repeat: repeat;
-  background-position: center;
-  background-size: auto;
-  background-attachment: scroll;
-  opacity: 1; }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-    
-    iframe { width: 100%; height: 600px; border: none; }
-    .card {  background: rgba(255, 255, 255, 0.12); /* más luz y contraste */
-  padding: 1rem;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15); }
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #ffffff;
-}
-
-a:hover {
-  color: #ffcc00;
-  text-decoration: underline;
-} 
+    a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Derecho en Línea UNICESMAG</h1>
-    <p>Plataforma académica y administrativa del Programa de Derecho</p>
   </header>
-  <nav>
-    <a href="#permisos">Permisos</a>
-    <a href="#citas">Citas</a>
-    <a href="#materiales">Materiales</a>
-    <a href="#reglamentos">Reglamentos</a>
-    <a href="#horarios">Horarios</a>
-    <a href="#plataformas">Plataformas</a>
-    <a href="#noticias">Noticias</a>
-  </nav>
-  <main>
-<section class="grid-container">
-  <div class="card">Contenido 1</div>
-  <div class="card">Contenido 2</div>
-  <div class="card">Contenido 3</div>
-  <!-- más tarjetas -->
-</section>
-     <section id="matricula" class="card">
-      <h2>Inscripciones y Matriculas</h2>
-      <p><a href="https://www.unicesmag.edu.co/inscripciones/"_blank">Inscripciones</a></p>
- 	<p><a href="https://ruah.unicesmag.edu.co/login">Completa tu matricula</a></p>
-    </section>
-    
-    <section id="permisos" class="card">
-      <h2>Permisos Académicos</h2>
-      <p><a href="https://forms.gle/F99x6PFUQVjgwBz89"_blank">Solicitar permiso aquí</a></p>
- 	<p><a href="https://lookerstudio.google.com/u/0/reporting/fc4727ec-98e5-4c0c-9e10-bcb74410a2cc/page/page_12345">Consulta el proceso de tu permiso aquí</a></p>
-    </section>
-    
- <section id="Horarios" class="card">
-      <h2>Horarios Académicos</h2>
-      <p><a href="https://linktr.ee/cesmaghorarios" target="_blank">Consultar horarios por semestre</a></p>
-    </section>
-    
-    <section id="citas" class="card">
-      <h2>Citas del Consultorio Jurídico</h2>
-      <p><a href="https://cjasesorias7.wixsite.com/misitio" target="_blank">Agendar cita</a></p>
-    </section>
 
-    <section id=SaberPro" class="card">
-      <h2>Pruebas SaberPro</h2>
-      <p><a href="https://cjasesorias7.wixsite.com/misitio" target="_blank">Citaciones</a></p>
-      <p><a href="https://cjasesorias7.wixsite.com/misitio" target="_blank">Instructivo</a></p>
-      <p><a href="https://cjasesorias7.wixsite.com/misitio" target="_blank">Material de Apoyo</a></p>
-    </section>
-    
-    <section id="Materiales" class="card">
-      <h2>Materiales Académicos</h2>
-      <ul>
-        <li><a href="https://www.minjusticia.gov.co/programas-co/LegalApp">Legal APP</a></li>
-        <li><a href="https://www.suin-juriscol.gov.co/index.html" target="_blank">Juriscol</a></li>
-      </ul>
-    </section>
-
-    <section id="Reglamentos" class="card">
-      <h2>Reglamentos y Documentos</h2>
-      <ul>
-        <li><a href="https://www.unicesmag.edu.co/reglamentos/">Reglamento Estudiantil</a></li>
-      </ul>
-    </section>
-
-
-    <section id="plataformas" class="card">
-  <h2>Plataformas Institucionales</h2>
-  <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
-    <a href="https://www.unicesmag.edu.co/tau/" target="_blank">
-      <img src="https://www.unicesmag.edu.co/recursos/uploads/2024/05/LogoTAU.webp" alt="Acceder a TAU" style="height: 100px;">
-    </a>
-    <a href="https://ruah.unicesmag.edu.co/login" target="_blank">
-      <img src="https://uv4.unicesmag.edu.co/pluginfile.php/1/theme_moove/marketing1icon/1691525151/ruah.png" alt="Acceder a RUAH" style="height: 100px;">
-    </a>
-  </div>
-</section>
-
-    
-    <section id="Noticias" class="card">
-      <h2>Noticias del Programa</h2>
-      <p>Próximamente: información de congresos, talleres, eventos y actividades académicas.</p>
-    </section>
-  </main>
+  <section class="grid-container">
+    <div class="card"><img src="icon-permiso.png" alt="Permiso"><a href="#">Permisos de Inasistencia</a></div>
+    <div class="card"><img src="icon-documentos.png" alt="Reglamento"><a href="#">Reglamentos y Documentos</a></div>
+    <div class="card"><img src="icon-horario.png" alt="Horarios"><a href="#">Horarios Académicos</a></div>
+    <div class="card"><img src="icon-tau.png" alt="TAU"><a href="https://www.unicesmag.edu.co/tau/" target="_blank">Plataforma TAU</a></div>
+    <div class="card"><img src="icon-ruah.png" alt="RUAH"><a href="https://ruah.unicesmag.edu.co/login" target="_blank">Plataforma RUAH</a></div>
+    <div class="card"><img src="icon-noticias.png" alt="Noticias"><a href="#">Noticias del Programa</a></div>
+    <div class="card"><img src="icon-contacto.png" alt="Contacto"><a href="#">Contacto y Soporte</a></div>
+  </section>
 </body>
 </html>
