@@ -3,8 +3,8 @@ const CACHE_NAME = 'derecho-unicesmag-cache-v1';
 const urlsToCache = [
   'index.html',
   'manifest.json',
-  'icon-192.png',
-  'icon-512.png'
+  '53.png',
+  '53.png'
 ];
 
 self.addEventListener('install', function(event) {
