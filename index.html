@@ -50,6 +50,13 @@
       height: 40px;
     }
 
+    .card iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 1rem;
+    }
+
     a {
       color: #fff;
       text-decoration: none;
@@ -68,19 +75,41 @@
   </header>
 
   <section class="grid-container">
-    <div class="card"><img src="permisos.png" alt="Permiso"><a href="#">Permisos de Inasistencia</a></div>
-    <div class="card"><img src="icon-documentos.png" alt="Reglamento"><a href="#">Reglamentos y Documentos</a></div>
-    <div class="card"><img src="icon-horario.png" alt="Horarios"><a href="#">Horarios Académicos</a></div>
-    <div class="card"><img src="icon-tau.png" alt="TAU"><a href="https://www.unicesmag.edu.co/tau/" target="_blank">Plataforma TAU</a></div>
-    <div class="card"><img src="icon-ruah.png" alt="RUAH"><a href="https://ruah.unicesmag.edu.co/login" target="_blank">Plataforma RUAH</a></div>
-    <div class="card"><img src="icon-noticias.png" alt="Noticias"><a href="#">Noticias del Programa</a></div>
-    <div class="card"><img src="icon-contacto.png" alt="Contacto"><a href="#">Contacto y Soporte</a></div>
+    <div class="card">
+      <img src="icon-permiso.png" alt="Permiso">
+      <div>
+        <div><strong>Permiso de Inasistencia</strong></div>
+        <iframe src="https://docs.google.com/spreadsheets/d/1C5rhD_82l.../preview"></iframe>
+      </div>
+    </div>
+    <div class="card">
+      <img src="icon-documentos.png" alt="Reglamento">
+      <div>
+        <div><strong>Reglamentos</strong></div>
+        <iframe src="https://www.unicesmag.edu.co/wp-content/uploads/2023/11/Reglamento-Estudiantil-2023.pdf"></iframe>
+      </div>
+    </div>
+    <div class="card">
+      <img src="icon-horario.png" alt="Horarios">
+      <div>
+        <div><strong>Horarios Académicos</strong></div>
+        <iframe src="https://linktr.ee/cesmaghorarios"></iframe>
+      </div>
+    </div>
+    <div class="card">
+      <img src="icon-inscripciones.png" alt="Inscripciones">
+      <div>
+        <div><strong>Inscripciones y Matrículas</strong></div>
+        <iframe src="https://www.unicesmag.edu.co/inscripciones/"></iframe>
+      </div>
+    </div>
+    <div class="card">
+      <img src="icon-saberpro.png" alt="Saber Pro">
+      <div>
+        <div><strong>Pruebas Saber Pro</strong></div>
+        <iframe src="https://www.icfes.gov.co/web/guest/examen-saber-pro"></iframe>
+      </div>
+    </div>
   </section>
 </body>
 </html>
-"""
-
-# Guardar el archivo como index.html
-file_path = Path("/mnt/data/index.html")
-file_path.write_text(index_html_content, encoding="utf-8")
-file_path.name
