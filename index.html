@@ -7,7 +7,7 @@
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="icon.png">
   <style>
-    body {
+    html, body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: url('fondo-unicesmag.png') no-repeat center center fixed;
@@ -26,7 +26,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      opacity: 0.10;
+      opacity: 0.08;
       z-index: 0;
       pointer-events: none;
     }
@@ -34,40 +34,46 @@
     header {
       text-align: center;
       padding: 1rem;
-      background-color: rgba(22, 46, 81, 0.9);
-      position: relative;
-      z-index: 1;
+      background: linear-gradient(to right, #162e51, #274472);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
 
     h1 {
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 2rem;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
     }
 
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
       gap: 1rem;
-      padding: 1rem;
+      padding: 1.5rem;
       justify-items: center;
       position: relative;
       z-index: 1;
+      padding-bottom: 5rem;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.3);
       padding: 1rem;
-      border-radius: 12px;
+      border-radius: 16px;
       text-align: center;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, background 0.3s ease;
       width: 180px;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .card:hover {
-      transform: scale(1.05);
-      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.4);
     }
 
     .card a {
@@ -80,51 +86,46 @@
     }
 
     .card a:hover {
-      color: #0056b3;
+      color: #007bff;
     }
 
     footer {
       text-align: center;
-      background-color: rgba(22, 46, 81, 0.85);
+      background: linear-gradient(to right, #162e51, #274472);
       padding: 1rem;
       font-size: 0.9rem;
-      position: relative;
+      position: fixed;
       bottom: 0;
+      left: 0;
       width: 100%;
-      color: #ccc;
-      z-index: 1;
+      color: #e0e0e0;
+      z-index: 1000;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
   <div class="marca-agua"></div>
-  <img class="estudiante-img" src="https://img.freepik.com/foto-gratis/retrato-estudiante-feliz-usando-portatil-sentado-piso_23-2148679373.jpg" alt="Estudiante UNICESMAG">
 
   <header>
     <h1>Derecho en Línea UNICESMAG</h1>
   </header>
 
   <section class="grid-container">
-  
-    <div class="card">
-      <a href="https://www.unicesmag.edu.co/inscripciones/" target="_blank">Inscripciones</a>
-      <a href="https://ruah.unicesmag.edu.co/login" target="_blank">Matrículas</a>
-    </div>
     <div class="card">
       <a href="https://forms.gle/z99JaqhSsWW7RpLo7" target="_blank">Solicitar Permiso</a>
-      <a href="https://lookerstudio.google.com/u/0/reporting/fc4727ec-98e5-4c0c-9e10-bcb74410a2cc/page/page_12345" target="_blank">Visualizar trámite de su Permiso</a>
+      <a href="https://lookerstudio.google.com/u/0/reporting/fc4727ec-98e5-4c0c-9e10-bcb74410a2cc/page/page_12345" target="_blank">Ver Permisos</a>
     </div>
     <div class="card">
       <a href="https://www.unicesmag.edu.co/wp-content/uploads/2023/11/Reglamento-Estudiantil-2023.pdf" target="_blank">Reglamentos</a>
     </div>
     <div class="card">
-      <a href="https://linktr.ee/cesmaghorarios" target="_blank">Horarios</a>
+      <a href="https://linktr.ee/cesmaghorarios" target="_blank">Ver Horarios</a>
     </div>
-
     <div class="card">
-      <a href="https://cjasesorias7.wixsite.com/misitio" target="_blank">Agendar Cita de Asesoría Consultorio Jurídico</a>
+      <a href="https://www.unicesmag.edu.co/inscripciones/" target="_blank">Inscripciones</a>
+      <a href="https://ruah.unicesmag.edu.co/login" target="_blank">Matrículas</a>
     </div>
-    
     <div class="card">
       <a href="https://www.icfes.gov.co/web/guest/examen-saber-pro" target="_blank">Saber Pro</a>
     </div>
@@ -132,14 +133,15 @@
       <a href="https://www.unicesmag.edu.co/examenes-preparatorios/" target="_blank">Preparatorios</a>
     </div>
     <div class="card">
-       <a  target="_blank">Plataformas Institucionales</a>
       <a href="https://ruah.unicesmag.edu.co/login" target="_blank">RUAH</a>
       <a href="https://www.unicesmag.edu.co/tau/" target="_blank">TAU</a>
     </div>
     <div class="card">
-      <a href="https://www.unicesmag.edu.co/iii-cid-probatorio/" target="_blank">III Congreso Internacional en Derecho Probatorio</a>
+      <a href="https://www.unicesmag.edu.co/iii-cid-probatorio/" target="_blank">Congreso Probatorio</a>
     </div>
-    
+    <div class="card">
+      <a href="https://calendly.com/consultoriojuridicocesmag" target="_blank">Agendar Cita CJ</a>
+    </div>
   </section>
 
   <footer>
